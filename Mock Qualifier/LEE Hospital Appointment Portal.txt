@@ -1,0 +1,107 @@
+<!-- Write necessary code wherever needed to complete this MC -->
+<!-- Do specify all the component-ids correctly for your code to get evaluated successfully -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LEE Hospital</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+<form>
+
+<div id="header">
+  <h1>LEE Hospital - Appointment Portal</h1>
+  <p>Fill the form below and we will get back soon to you for more updates</p>
+</div>
+
+<!-- Make use of the following entity for alignment purpose: '&nbsp;','&ensp;', and '&emsp;' -->
+
+<div id="details">
+ 
+ <!-- Code for "First name" and "Last name" -->
+ <label>Name*</label><br>
+ <input type="text" id="firstname" pattern="[A-Z a-z /s]+" placeholder="First name" required>
+ <input type="text" id="lastname" pattern="[A-Z a-z /s]+" placeholder="Last name" required>
+
+<br><br>
+
+<!-- Code for "Gender" and "Phone" -->
+<label>Gender*</label><br>
+<select id="gender" required >
+    <option >--Select--</option>
+    <option>Male</option>
+    <option>Female</option>
+    <option>Transgender</option>
+</select>
+<label>Phone*</label>
+<input type="tel" id="phone" placeholder="### ### ####"
+       pattern="[789][0-9]{9}"
+       required>
+
+<br><br>
+
+<!-- Code for "DOB" and "Email address" -->
+<label>Date of Birth*</label><br>
+<input type="date" id="dob" required>
+<label>Email Address*</label>
+<input type="email" id="email" required>
+
+
+<br><br>
+
+<!-- Code for "Address" -->
+<label>Address</label><br>
+<textarea  rows="5" cols="46" id="Address"  placeholder="Type your address here"></textarea>
+
+<br>
+
+<!-- Code for "First_visit" -->
+<label>Is this your first visit to this hospital?*</label><br>
+<input type="radio" id="yes">
+<label>Yes</label>
+<input type="radio" id="no">
+<label>No</label>
+<br>
+
+<fieldset>
+<legend><h3>Appointment Details</h3></legend>
+
+<!-- Code for "Appointment types" -->
+<label>Select which appointment type(s) you require</label><br>
+<input type="checkbox" id="cervix">
+<label>Cervix checkup</label>
+<input type="checkbox" id="heart">
+<label>Heart checkup</label><br>
+<input type="checkbox" id="eye">
+<label>Eye checkup </label>
+<input type="checkbox" id="hearing">
+<label>Hearing checkup</label>
+
+
+
+<br><br>
+
+<!-- Code for "Appointment time" -->
+<label>Time of Appointment*</label>
+<input type="time" id="appointment_time" required>
+
+<br>
+
+</fieldset>
+
+<div><h5>Disclaimer:</h5>
+  <li>We strive to accommodate your preferred appointment dates and time.</li>
+  <li> Please bear in mind that we offer no certain guarantees due to a number of conditions.</li>
+  <li> But not limited to: business hours of operation, staffing, equipment, availability, and holidays.</li>
+  <li>  Please allow us up to 24-hours to respond to your appointment request.</li>
+</div>
+ <br>
+ </div>
+<!--  Code for submit button -->
+<label>Send</label>
+<input type="button" id="send">
+
+<br>
+</form>
+</body>
+</html>

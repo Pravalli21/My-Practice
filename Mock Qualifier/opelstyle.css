@@ -1,0 +1,70 @@
+                *{
+	        		font-weight: bold;
+	         	}
+	            body{
+	                background-color: #38383f;
+                    /* background-image: url("Abroad.jpg"); */
+	            }
+                h1{
+                    text-align: center;                    
+                    color:#fafa13;
+                }
+
+
+                h2{
+                    text-align: center;
+                    color:#ffffff;
+                    text-decoration: underline;
+                }
+
+                img{
+                    width:50%
+                
+                }
+                #first{
+                     background-color:#f984ab;
+                }
+
+                section{
+                    background-color:#58adf3;
+                }
+                figure{
+                    text-align: center;
+                }
+                
+                p,h3{
+                    text-align: left;
+                    margin-left: 20px;
+                }
+                
+                aside{
+                    float: right;
+                    background-color:#99ede0;
+                    margin-right: 30px;
+                    margin-top: 10px;
+                }
+                caption{
+                    background-color: #58adf3;
+                    color: #ffffff;
+                }
+
+                nav{
+                    text-align: right;
+                     background-color:#58adf3; 
+                     /*color:#000000;*/
+                }
+
+                header,footer{
+                    background-color:#2f74ad;
+                    padding: 10px;
+                    color:#FFFFFF;                    
+                }
+                figcaption{
+                    color: #ffffff;
+                }
+                footer p{
+                    text-align: center;
+                     color:#fafa13;
+                }
+			   
+		    

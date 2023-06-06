@@ -1,0 +1,146 @@
+<!--DO NOT CHANGE THE CODE IN THIS FILE-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C2H: CakeToHome</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <style>
+        div{
+            margin-bottom: 3px;
+        }
+        label{
+            font-size: large;
+        }
+    </style>
+</head>
+<body class="bg-info text-white">
+    <div class="text-center">
+        <h1 class="bg-dark p-5 font-weight-bolder">C<sub>2</sub>H : Cake to Home</h1>
+    </div>
+    <div class="container">
+        <form onsubmit="return PlaceOrder()">
+        <div class="row">
+            <div class="col">
+                <label>Name</label>
+            </div>
+            <div class="col">
+                <input type="text" id="name" class="form-control" placeholder="Enter the name" >
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <label>Contact Number</label>
+            </div>
+            <div class="col">
+                <input type="tel" id="contactNumber" class="form-control" placeholder="Enter the contact number" >
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <label>Delivery Address</label>
+            </div>
+            <div class="col">
+                <textarea rows="3" cols="20" id="address" class="form-control" placeholder="Enter the delivery address" ></textarea>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <label>Delivery Date</label>
+            </div>
+            <div class="col">
+                <input type="date" id="deliveryDate" class="form-control" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <label>Cake Type</label>
+            </div>
+            <div class="col">
+                <select id="cakeType" class="form-control" required>
+                    <option value="">Select</option>
+                    <option value="Red Velvet" id="redVelvet">Red Velvet</option>
+                    <option value="Butterscotch" id="butterscotch">Butterscotch</option>
+                    <option value="Chocolate Truffle" id="chocolateTruffle">Chocolate Truffle</option>
+                    <option value="Black Forest" id="blackForest">Black Forest</option>
+                    <option value="White Forest" id="whiteForest">White Forest</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <label>Cake Shape</label>
+            </div>
+            <div class="col">
+                <Select id="cakeShape" class="form-control" required>
+                    <option value="">Select</option>
+                    <option value="Square" id="square">Square</option>
+                    <option value="Circle" id="circle">Circle</option>
+                    <option value="Heart" id="heart">Heart</option>                      
+                    </Select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <label>Weight in Kg</label>
+            </div>
+            <div class="col">
+                <input type="text" id="weight" class="form-control" placeholder="Enter the Cake weight" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label>Message</label>
+            </div>
+            <div class="col">
+                <input type="text" id="message" class="form-control" placeholder="Massage on the cake">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label>Is door step delivery required?<br/>(Additional cost of $5 for Door delivery)</label>
+            </div>
+            <div class="col">
+                <div class="form-check form-check-inline">
+                <input type='radio' id='deliveryYes' class="form-check-input" value="Yes" name="delivery"><label>Yes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                <input type='radio' id='deliveryNo' class="form-check-input" value="No" name="delivery"><label>No</label>
+                </div>
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+            </div>
+            <div class="col">
+                <div class="form-check form-check-inline">
+                <input type='checkbox' id='cutlery' name='cutlery' value="Yes" />
+                    <label class="form-check-label" for="cutlery">Send Cutlery Items along with the Cake(Free of cost)</label>
+                    </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col">
+                <label></label>
+            </div>
+            <div class="col">
+                <input type="submit" id='submit' value="Place Order" class="btn btn-success btn-lg" />
+            </div>
+        </div>
+    </form>
+
+    <div class="bg-dark text-white h4 text-center" id="result"></div>
+
+    </div>
+    <script src="script.js" lang="text/javascript"></script>
+</body>
+</html>

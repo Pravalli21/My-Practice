@@ -1,0 +1,157 @@
+<!--Please do not make any changes in this template-->
+<!--CSS and image file included as part of this template-->
+<!-- Write necessary code wherever needed to complete this MC  -->
+<!-- Do specify all the component-ids correctly for your code to get evaluated successfully -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Opel Tours</title> 
+         <link rel="stylesheet" href="style.css">
+           
+	</head>
+    <body>
+<!--Create header with the id 'main'-->
+        <!--Create heading - OPEL TOURS with h1 tag with id head1 -->
+        <!--Encolse the below anchor tags with navigation element which has navigation as id-->
+                     
+ <header id="main"> 
+ <h1 id="head1" OPEL TOURS></h1>
+    <nav id="navigation">
+              <a href="#top">HOME</a> |
+              <a href="#top">ABOUT US</a> |
+              <a href="#top">GALLERY</a> |
+              <a href="#top">CONTACT US</a> 
+    </nav>
+</header>
+              
+              <!--Create section element with 'first; as id-->
+              <section id="first">
+                     <h2 id="int">INTERNATIONAL DESTINATIONS</h2>
+                     <!--Create heading INTERNATIONAL DESTINATIONS in h2 tag with id 'int'-->
+   
+
+           <!--Create aside element with id 'side'-->
+           <aside id="side">
+               <table id="package" border="2">
+                   <caption id="cap"></caption>
+                 <tr>
+                     <td id="rspan" rowspan="5">
+                         National & International.
+                     </td>
+                      
+                 </tr>  
+                 <tr>
+                     <td id="d1">
+                         Air Fare for economy class.
+                     </td>
+                 </tr>
+                 <tr>
+                     <td id="d2">
+                         Accommodation.
+                     </td>
+                 </tr>
+                 <tr>
+                     <td id="d3">
+                         All transfers by car.
+                     </td>
+                 </tr>
+                 <tr>
+                     <td id="d4">
+                         All permits.
+                     </td>
+                 </tr>
+                 
+                   
+               </table>
+           </aside>
+              </section>
+              <p id="highlight1">Places to Visit in<mark>OTHER COUNTRIES</mark></p>
+            <!--Create Unordered list with id 'info1'-->
+             <ul id="info1">
+                 <li>New Zealand</li>
+                 <li>Paris</li>
+                 <li>Bora Bora</li>
+                 <li>Maui</li>
+                 <li>Tahiti</li>
+             </ul>
+               <figure id="image1">
+                <figcaption id="figcap">International Glimpses</figcaption>
+                  <img id="international.Image" src="Abroad1.jpg"> 
+      
+               </figure>
+            <!--Include the image in the figure element with id 'image1'-->
+
+                <!--image tag should have the id 'international.Image file name Abroad1.jpg-->
+                 
+            <!--figure caption id 'figcap' and text value 'International Glimpses'-->
+            <figcaption id="figcap">International Glimpses</figcaption>
+
+        <!--Create heading INTERNATIONAL DESTINATIONS in h2 tag with id 'int'-->
+   
+
+           <!--Create aside element with id 'side'
+           <aside id="side">
+               <table id="package" border="2">
+                   <caption id="cap"></caption>
+                 <tr>
+                     <td id="rspan" rowspan="5">
+                         National & International.
+                     </td>
+                      
+                 </tr>  
+                 <tr>
+                     <td id="d1">
+                         Air Fare for economy class.
+                     </td>
+                 </tr>
+                 <tr>
+                     <td id="d2">
+                         Accommodation.
+                     </td>
+                 </tr>
+                 <tr>
+                     <td id="d3">
+                         All transfers by car.
+                     </td>
+                 </tr>
+                 <tr>
+                     <td id="d4">
+                         All permits.
+                     </td>
+                 </tr>
+                 
+                   
+               </table>
+           </aside>-->
+            <!--Create table with id 'package' and border value="2" -->
+        
+            <p id="highlight1">Places to Visit in<mark>OTHER COUNTRIES</mark></p>
+            <!--Create Unordered list with id 'info1'
+             <ul id="info1">
+                 <li>New Zealand</li>
+                 <li>Paris</li>
+                 <li>Bora Bora</li>
+                 <li>Maui</li>
+                 <li>Tahiti</li>
+             </ul>
+               <figure id="image1">
+                <figcaption id="figcap">International Glimpses</figcaption>
+                  <img id="international.Image" src="Abroad1.jpg"> -->
+      
+             <!--  </figure>-->
+            <!--Include the image in the figure element with id 'image1'-->
+
+                <!--image tag should have the id 'international.Image file name Abroad1.jpg-->
+                 
+            <!--figure caption id 'figcap' and text value 'International Glimpses'-->
+           <!-- <figcaption id="figcap">International Glimpses</figcaption>-->
+
+        
+            <!--Create footer with id 'footer' contains paragraph tag with id 'rights'-->
+            <footer id="footer">
+                <p id="rights">2022 Opel Tours. All Rights Reserved.</p>
+            </footer>
+     
+       
+    </body>
+</html>

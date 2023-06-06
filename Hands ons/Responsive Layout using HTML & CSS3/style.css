@@ -1,0 +1,261 @@
+/* global styles */
+html {
+  font-size: 10px;
+}
+
+
+.nav-item :hover{
+  background-color: darkblue;
+  color: #e8e8e6;
+  display:block;
+}
+
+
+.btn {
+  margin: 1rem 0;
+  align-self: flex-start;
+  font-size: 1.75rem;
+  border-radius: 2rem;
+  background-color: #26efe9;
+  padding: 1rem 2rem;
+  color: #000048;
+  border: none;
+ 
+}
+.btn:hover {
+  background-color: #99dbec;
+  color: #04042c;
+  
+  
+}
+
+/* navbar */
+.navbar-brand img {
+  width: 20rem;
+}
+.nav-item {
+  margin: 0 2rem;
+  font-size: 2rem;
+  
+}
+
+/* carousal */
+.carousel {
+  height: 80vh;
+}
+.carousel-inner,
+.carousel-item {
+  height: 100%;
+}
+.carousel-item {
+  position: relative;
+}
+.carousel-caption {
+  text-align: left;
+  max-width: 60%;
+  position: absolute;
+  top: 0%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+
+}
+.carousel-caption h3 {
+  margin: 1rem;
+  font-size: 6rem;
+}
+.carousel-caption p {
+  margin: 1rem;
+  font-size: 2rem;
+ 
+}
+
+/* image overlay cards */
+.card-img-overlay {
+  width: 40%;
+  height: 50%;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  opacity: 0.9;
+}
+
+/* complex card */
+#complexCardSection {
+  background-image: linear-gradient(
+    150deg,
+    #2d2d8f 20%,
+    #006fba 60%,
+    #21fceb 95%
+  );
+  color: #fff;
+  padding: 4rem 1rem;
+}
+
+
+#complexCardSection .row .col {
+  width: 550px;
+  margin: 2rem 0rem;
+}
+#complexCardSection .row .col .card {
+  height: 300px;
+  border: 0;
+  border-radius: 2rem;
+  position: relative;
+}
+#complexCardSection .row .col .card img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+#complexCardSection .row .col .card .card-body {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  bottom: 0%;
+  background: rgba(0, 0, 72, 0.6);
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+#complexCardSection .row .col .card .card-body:hover {
+  height: 100%;
+}
+#complexCardSection .row .col .card .card-body div {
+  display: none;
+}
+#complexCardSection .row .col .card .card-body:hover div {
+  display: block;
+}
+#complexCardSection .row .col .card .card-body h5 {
+  display: inline-block;
+  border-bottom: 0.2rem solid #fff;
+  padding: 1rem 0;
+}
+
+/* form section */
+#formSection h3,
+#formSection h5 {
+  color: #000048;
+}
+.form-label {
+  font-size: 1.75rem;
+  color: #000048;
+  margin: 1rem 0;
+}
+.form-control {
+  font-size: 1.75rem;
+  padding: 1rem 1.5rem;
+  color: #000048;
+  background: #f5f5f2;
+  border: 0.05rem solid #97999b;
+  border-radius: 1rem;
+}
+.form-control:focus {
+  background: #f5f5f2;
+  border: none;
+}
+.form-control::placeholder {
+  color: #000048;
+}
+
+/* footer */
+#secondaryFooter {
+  background-color: #e8e8e6;
+}
+#secondaryFooter #iconContainer a {
+  margin: 0 1rem;
+}
+#secondaryFooter #iconContainer a img {
+  width: 30px;
+  height: 30px;
+}
+#secondaryFooter #navLinks{
+  font-size: 1.75rem;
+}
+#secondaryFooter #navLinks a, #primaryFooter a{
+  text-decoration: none;
+  color: #000048f9;
+  margin: 0 1rem;
+}
+#secondaryFooter #navLinks a:hover, #primaryFooter a:hover{
+  color: #006fba;
+}
+#primaryFooter h3{
+  font-size: 2rem;
+  color: #006fba;
+  padding: 1 rem 0;
+}
+
+#primaryFooter a{
+  margin: 0.25rem 0;
+  font-size: 1.5rem;
+}
+
+/* extra large screen */
+@media screen and (max-width: 1200px) {
+  .card-img-overlay {
+    width: 50%;
+    height: 60%;
+  }
+}
+
+/* large screen */
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 9px;
+  }
+
+  /* cards */
+  .card-img-overlay {
+    width: 60%;
+    height: 70%;
+  }
+
+  /* complex card */
+  #complexCardSection .row .col {
+    width: 400px;
+  }
+}
+
+/* mid screen */
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 8px;
+  }
+
+  /* carousel */
+  .carousel {
+    height: 50vh;
+  }
+  .carousel-caption {
+    max-width: 80%;
+  }
+  .carousel-caption h3 {
+    font-size: 5rem;
+  }
+
+  #complexCardSection .row .col {
+    width: 300px;
+  }
+}
+
+/* small screen */
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 7px;
+  }
+  /* navbar */
+  .navbar-brand img {
+    width: 2000px;
+  }
+  /* carousel */
+  .carousel-caption h3 {
+    font-size: 4rem;
+  }
+  /* cards */
+  .card-img-overlay {
+    width: 90%;
+  }
+}

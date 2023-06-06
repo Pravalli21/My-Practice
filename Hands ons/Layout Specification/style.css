@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Calibri';
+}
+
+/* header 1 - nav ber 1  */
+.heading-nav1{
+    width: 100%;
+    background-color: #333333;
+}
+
+.nav-ber1{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.logo{
+    font-size: 48pt;
+    color: white;
+    text-decoration: none;
+}
+
+.navber1-li{
+    display: inline-block;
+    padding: 25px 0;
+    margin-left: 15px;
+}
+
+.navber1-a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+
+.navber1-ul{
+    float: right;
+}
+
+/* header 2 - nav ber 2  */
+.heading-nav2{
+    width: 100%;
+    height: 50px;
+}
+
+.nav-ber2{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.navber2-li{
+    display: inline-block;
+    padding: 15px 10px 10px 0px;
+}
+
+.navber2-a{
+    text-decoration: none;
+    color: #333333;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.search-input{
+    float: right;
+    width: 200px;
+    height: 30px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.navber2-ul{
+    float: left;
+}
+
+/* image & text section  */
+.img-section{
+    width: 100%;
+    background-color: rgb(237, 237, 239);
+    /* height: 300px; */
+    overflow: auto;
+}
+
+.img-text{
+    width: 1000px;
+    height: 350px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.para-text{
+    font-size: 58px;
+    color: #333333;
+    padding-left: 60px;
+}
+
+.deliveries-text{
+    font-size: 18pt;
+    font-weight: 600;
+}
+
+.img{
+    width: 175px;
+    height: 200px;
+}
+
+.deliveries{
+    padding-left: 50px;
+}
+
+/* deals  */
+.deals-head::first-letter{
+    font-size: 200%;
+}
+
+.deals-head{
+    font-size: 30px;
+    font-weight: 500;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+.deals{
+    width: 100%;
+}
+
+.deals-section{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.grid-deals{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 150px;
+    width: 960px;
+    height: 190px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.des-text{
+    width: 160px;
+}
+
+
+/* Fashion Categories  */
+.fashion-categories{
+    width: 100%;
+}
+
+.fashion-section{
+    width: 1000px;
+    margin: 0 auto;
+}
+.fashion-head::first-letter{
+    font-size: 200%;
+}
+
+.fashion-head{
+    font-size: 30px;
+    font-weight: 500;
+    color: #333333;
+}
+
+.grid-fashion{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 250px 250px;
+    width: 1000px;
+    height: 532px;
+    margin: 0 auto;
+     
+    row-gap: 20px;
+    column-gap: 110px;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-fashion-items{
+    width: 160px;
+    height: 200px;
+    background-color: #dbf3fa;
+    margin: 0 auto;
+}
+
+.textstyle{
+    font-size: 20px;
+    color: #333333;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 55px;
+}
+
+.imagestyle{
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.item1{
+    margin-left: 25px;
+}
+
+/* section - textarea  */
+.textarea-section{
+    width: 100%;
+}
+
+.textarea{
+    width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+}
+
+.textareastyle{
+    font-size: 14pt;
+    color: #333333;
+    text-decoration: none;
+    text-align: left;
+    font-weight: 600;
+    text-align: justify;
+    margin-right: 5px;
+}
+
+/* footer  */
+.footer{
+    width: 100%;
+    background-color: #131a22;
+}
+.footer-items{
+    width: 1000px;
+    display: flex;
+    justify-content: start;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.footerhead{
+    color: white;
+    font-size: 18pt;
+    margin-bottom: 10px;
+}
+
+.footerlink{
+    text-decoration: none;
+    color: white;
+    font-size: 16pt;
+    margin-bottom: 6px;
+}
+
+.footer-text{
+    margin-right: 55px;
+}

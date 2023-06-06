@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+   <script src="script.js" lang="text/javascript"></script>
+   <title>Muddy Paws</title>
+   <style>
+body {
+	color: #000000;
+	background-image: url("puppy2.jpg");
+	background-color: #a45729;
+	width: 80%;
+	margin-left: 10%;
+	font-size: 26px;
+	/*font-family: Georgia;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+label, output {
+	color:#4adede;
+	font-weight: 500;
+	margin-left: 20px;
+}
+
+::placeholder {
+	color: #999999;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
+
+#result{
+	/*font-family: 'Courier New', Courier, monospace;*/
+	font-size: 20px;
+	font-style:normal;
+	color:#ffffff;
+    font-weight:bolder;
+    text-align: center;
+    color:#deead2;
+}
+
+h2 {
+	color:#4adede;
+	text-align: center;
+	font-weight: bolder;
+	/*text-decoration: underline;*/
+}
+ nav{
+                text-align: left;
+                font-weight: bolder;
+                color:#deead2;
+                font-size: 18px;
+        
+               
+            }
+a{
+    color:#152238;
+}
+            
+section{
+     /*background-image: linear-gradient(#02055a, orange,grey);*/
+     /*background-image: url("puppy2.jpg");*/
+      /*height: 180px;*/
+     /* background-repeat: no-repeat;*/
+     /* background-size: cover;*/
+     background-color: #a45729;
+}
+             
+table {
+	font-family: Calibri;
+	width: 90%;
+	font-size: 20px;
+}
+
+td {
+	padding: 3px;
+}
+
+textarea, select, input[type=text], input[type=tel], input[type=email],
+	#duration {
+	width: 70%;
+	border-radius: 5px;
+	color: #000000;
+}
+
+#submit{
+	margin-left: 85px;
+}
+h1{
+   
+   color:#deead2;
+   font-weight: bolder;
+   text-align: right;
+}
+
+
+
+footer{
+      color:#deead2;
+    font-size: 14px; 
+    font-weight: bolder;
+    text-align: center;
+    height:50px;10px
+    padding: 20px;
+}
+div{
+    height:80px;
+    margin-top:10px;
+   
+}
+   </style>
+</head>
+<body class="demo">
+
+		
+		 <header id="main">
+            <h1 style="color:#4adede;">Muddy Paws</h1>
+                
+            <nav id="nav">
+                
+                <a href="#top">Home</a> |
+                <a href="#top">Health Care</a> |
+                <a href="#top">Food supplies</a> |
+                <a href="#top">Grooming kit Us</a> |
+                <a href="#top">Book Now</a> 
+              
+              </nav>
+            </header><br/>
+      
+	<section>
+	     <h2>BUY ANY BREED TODAY TO AVAIL 20% OFFER</h2>
+	    
+	<form onsubmit="return calculateCost()">
+		<table id="appointment">
+			<tr>
+				<td><label>Customer Name</label></td>
+				<td><input type="text" id="cname" placeholder="Enter your name" required></td>
+			</tr>
+			<tr>
+				<td><label>Email id</label></td>
+				<td><input type="text" id="email" 	placeholder="Enter your email" required></td>
+			</tr>
+			
+			<tr>
+				<td><label>Password</label></td>
+				<td><input type="password" id="pwd" 	placeholder="Enter your password" required></td>
+			</tr>
+
+			<tr>
+				<td><label>Delivery Date</label></td>
+				<td><input type="date" id="date" required>               
+			</tr>
+		
+			</tr>
+			<tr>
+				<td><label>Select Breed</label></td>
+				<td><Select id="breed">
+						<option value="German Shepherd" id="german">German Shepherd</option>
+						<option value="Havanese" id="havanese">Havanese</option>
+						<option value="Golden Retriever" id="golden">Golden Retriever</option>
+						<option value="Siberian Husky" id="siberian">Siberian Husky</option>
+                        <option value="Maltese" id="maltese">Maltese</option>
+					</Select></td>
+			</tr>
+			
+			<tr>
+				<td><label>Number of Puppies</label></td>
+				<td><input type="number" id="count" min="0" max="20" required></td>
+			</tr>
+			
+			<tr>
+				<td><label>Mobile Number</label></td>
+				<td><input type="tel" id="mobilenumber" placeholder="Enter your mobile number" required></td>
+			</tr>
+		
+			<tr>
+				<td><label>Address</label></td>
+				<td><textarea rows="3" cols="20" id="address" placeholder="Enter your address" required></textarea></td>
+			</tr>
+           
+			<tr>
+				<td></td>
+				<td><input type="submit" id='submit' value="SUBMIT" class="btn btn-success" />
+			</tr>
+		</table>
+		<div id="result"></div>
+		<!--  <div id="result2"></div>-->
+
+	</form>
+	</section>
+	<footer  id="footer">
+            
+        <p>Copyright  &copy; 2023 Muddy Paws</p>
+    
+    </footer>
+</body>
+</html>
