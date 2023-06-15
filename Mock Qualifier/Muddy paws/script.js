@@ -1,88 +1,68 @@
-//Don't change or delete the try/catch block
+// Function to validate the password pattern
+function checkPassword(pwd) {
+  // Password pattern: minimum 6 characters, at least one capital letter, one small letter, and one digit
+  const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,}$/;
+  return passwordRegex.test(pwd);
+}
 
-function calculateCost(){
-    try {
-        var password = document.getElementById("password").value;
-        var name = document.getElementById("name").value;
-        var breed = document.getElementById("breed").value;
-        var count = parseInt(document.getElementById("count").value);
+// Function to calculate the total cost
+function getTotalAmount(count, breed) {
+  let costPerPuppy = 0;
   
-        var resultDiv = document.getElementById("result");
-         // Step 1: Invoke checkPassword() function
-  var isPasswordValid = checkPassword(password);
-  
-  if (!isPasswordValid) {
-    resultDiv.innerHTML = "Password doesn't match the required pattern";
-    return;
+  switch (breed) {
+    case 'German Shepherd':
+      costPerPuppy = 1500;
+      break;
+    case 'Havanese':
+      costPerPuppy = 1000;
+      break;
+    case 'Golden Retriever':
+      costPerPuppy = 900;
+      break;
+    case 'Siberian Husky':
+      costPerPuppy = 2000;
+      break;
+    case 'Maltese':
+      costPerPuppy = 1200;
+      break;
+    default:
+      return 0;
   }
   
-  // Step 2: Calculate total cost using getTotalAmount() function
-  var totalAmount = getTotalAmount(count, breed);
-  
-  // Display the output in the result div
-  var output = "Hi " + name + ", the total amount to be paid for the breed " + breed + " is $" + totalAmount + ".";
-  resultDiv.innerHTML = output;
-}
-
-  
-        
-        //Fetch the needed DOM values 
-        
-        //Invoke checkPassword(pwd) , if true then invoke getTotalAmount(count,breed) and dsiplay the output as per description
-        //if false, display the correct message as given in description
-        
-
-    catch(err){
-        document.getElementById("result").innerHTML="Function calculateCost: "+err;
-    }
-    return false;
-}
-
-function checkPassword(password) {
-	try {
-        	    
-        	// Fill your code here to check whether the password pattern satisfies the requirements
-        	//password should be of minimum 6 characters having atleast 1 small letter(a-z),1 capital letter(A-Z) and 1 digit(0-9)
-            // HINT :use RegExp to match the pattern, if matches with pattern return true, else false.
-            
-  // Define the regular expression pattern for password validation
-  var pattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,}$/;
-  
-  // Check if the password matches the pattern
-  return pattern.test(pwd);
-
-             
-        		
-	} catch(err) {
-		document.getElementById("result").innerHTML="Function checkPassword: "+err;
-	}
-}
-
-function getTotalAmount(count,breed) {
-    try{
-    
-   // Return the total cost after applying 20% discount on total amount based on breed selection and total number of puppies passed as arguments
-   // refer description for cost per puppy for breed types
-// Define the cost per breed
-  var costPerBreed = {
-    "German Shepherd": 1500,
-    "Havanese": 1000,
-    "Golden Retriever": 900,
-    "Siberian Husky": 2000,
-    "Maltese": 1200
-  };
-  
-  // Calculate the total cost without discount
-  var totalCost = count * costPerBreed[breed];
+  // Calculate the total cost by multiplying the count and cost per puppy
+  let totalCost = count * costPerPuppy;
   
   // Apply 20% discount
-  var discountedCost = totalCost - (totalCost * 0.20);
+  totalCost -= totalCost * 0.2;
   
-  return discountedCost;
-      }
-      catch(err){
-           document.getElementById("result").innerHTML="Function getTotalAmount: "+err;
-          }
+  return totalCost;
 }
-         
-       
+
+// Function to handle the form submission
+function calculateCost() {
+  // Get the form elements
+  const name = document.getElementById('name').value;
+  const password = document.getElementById('password').value;
+  const count = document.getElementById('count').value;
+  const breed = document.getElementById('breed').value;
+  const resultDiv = document.getElementById('result');
+  
+  // Validate the password
+  const passwordValid = checkPassword(password);
+  
+  if (!passwordValid) {
+    resultDiv.innerHTML = 'Password doesn\'t match the required pattern';
+  } else {
+    // Calculate the total cost
+    const totalAmount = getTotalAmount(count, breed);
+    
+    // Create the output message
+    const message = `Hi ${name}, the total amount to be paid for the breed ${breed} is $${totalAmount}.`;
+    
+    // Display the output message
+    resultDiv.innerHTML = message;
+  }
+}
+
+// Add event listener to the form submission
+document.getElementById('submit').addEventListener('click', calculateCost);
