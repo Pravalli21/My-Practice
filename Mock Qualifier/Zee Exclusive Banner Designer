@@ -1,0 +1,57 @@
+script.js
+
+// Function to calculate the total cost of the banners
+function calculateCost(dimension, banner_type, count, creativity_level) {
+  var banner_price = {
+    "24x36": {
+      "Vinyl": 50,
+      "Mesh": 70,
+      "Fabric": 90
+    },
+    "36x48": {
+      "Vinyl": 75,
+      "Mesh": 100,
+      "Fabric": 120
+    },
+    "48x72": {
+      "Vinyl": 100,
+      "Mesh": 150,
+      "Fabric": 200
+    }
+  };
+
+  var creativity_price = {
+    "Basic": 20,
+    "Medium": 50,
+    "Premium": 100
+  };
+
+  var total_cost = banner_price[dimension][banner_type] * count + creativity_price[creativity_level];
+  return total_cost;
+}
+
+// Function to handle the form submission
+function submitForm() {
+  // Get the form elements
+  var dimension = document.getElementById("dimension").value;
+  var banner_type = document.getElementById("bannerType").value;
+  var count = parseInt(document.getElementById("count").value);
+  var creativity_level = document.getElementById("creativityLevel").value;
+
+  // Calculate the total cost
+  var total_cost = calculateCost(dimension, banner_type, count, creativity_level);
+
+  // Display the total cost
+  var costDiv = document.getElementById("cost");
+  costDiv.innerHTML = "The entire cost of your requirements is " + total_cost + " dollars";
+}
+
+// Function to handle the form reset
+function resetForm() {
+  var costDiv = document.getElementById("cost");
+  costDiv.innerHTML = "Previous estimations have been successfully reset";
+}
+
+// Add event listeners to the form submission and reset buttons
+document.getElementById("calculateButton").addEventListener("click", submitForm);
+document.getElementById("resetButton").addEventListener("click", resetForm);
